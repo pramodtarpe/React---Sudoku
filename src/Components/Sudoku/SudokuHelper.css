@@ -1,0 +1,36 @@
+.helper-container {
+    background: white;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2rem;
+    padding: 2px;
+    border-radius: 10px;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.helper-container div {
+    height: 40px;
+    width: 40px;
+    margin: 2px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    border-radius: 10px;
+}
+
+.green {
+    background-color: green;
+}
+.gray {
+    background-color: gray;
+    opacity: 0.2;
+}

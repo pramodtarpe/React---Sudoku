@@ -1,0 +1,19 @@
+.btn {
+    margin: 2px;
+    font-size: 1.2rem;
+    color: black;
+    background-color: white;
+    border: 0;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    outline: 0;
+    padding: 10px 20px; 
+    transition: 0.2s;
+}
+
+.btn:hover, .btn:active {
+    background: rgb(135, 29, 177);
+    color: white;
+}

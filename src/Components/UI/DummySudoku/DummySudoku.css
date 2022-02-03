@@ -1,0 +1,64 @@
+.dummy-container {
+    margin: auto;
+    width: 500px;
+}
+
+.dummy-row {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    transform: rotateX(180deg);
+}
+.dummy-row:nth-child(1) {
+    animation: flipItem 200ms 0ms reverse forwards;
+}
+.dummy-row:nth-child(2) {
+    animation: flipItem 200ms 200ms reverse forwards;
+}
+.dummy-row:nth-child(3) {
+    animation: flipItem 200ms 500ms reverse forwards;
+}
+.dummy-row:nth-child(4) {
+    animation: flipItem 200ms 800ms reverse forwards;
+}
+.dummy-row:nth-child(5) {
+    animation: flipItem 200ms 1100ms reverse forwards;
+}
+.dummy-row:nth-child(6) {
+    animation: flipItem 200ms 1400ms reverse forwards;
+}
+.dummy-row:nth-child(7) {
+    animation: flipItem 200ms 1700ms reverse forwards;
+}
+.dummy-row:nth-child(8) {
+    animation: flipItem 200ms 2000ms reverse forwards;
+}
+.dummy-row:nth-child(9) {
+    animation: flipItem 200ms 2400ms reverse forwards;
+}
+
+.dummy-item {
+    height: 50px;
+    width: 50px;
+    background-color: red;
+    margin: 1px;
+    color: white;
+    font-weight: bold;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@keyframes flipItem{
+    from{
+        transform: rotateX(0deg);
+        visibility:visible;
+    }
+    to{
+        transform: rotateX(180deg);
+    }
+}
